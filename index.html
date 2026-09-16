@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nooria Support</title>
+<meta name="description" content="Hilfe und Kontakt für die Nooria-App">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F2EA;
+    --surface: #FFFFFF;
+    --surface-soft: #F0E9DA;
+    --text: #211A12;
+    --text-secondary: #6B5D4D;
+    --accent: #8F7B5C;
+    --accent-strong: #6E5A3F;
+    --border: #E4DCC9;
+    --font-display: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1C1610;
+      --surface: #251E15;
+      --surface-soft: #2E2519;
+      --text: #F5EFE2;
+      --text-secondary: #B6A88E;
+      --accent: #CBA96C;
+      --accent-strong: #E0BE87;
+      --border: #3B3020;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); }
+  body {
+    margin: 0;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 48px 20px 64px;
+  }
+  a { color: var(--accent-strong); }
+
+  .wrap { max-width: 640px; margin: 0 auto; }
+
+  header { margin-bottom: 40px; }
+  .crest {
+    width: 46px; height: 46px;
+    border-radius: 14px;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--surface);
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 36px);
+    margin: 0 0 8px;
+  }
+  .lede {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin: 0;
+    max-width: 46ch;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .contact-card h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0 0 4px;
+  }
+  .contact-card p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14.5px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: var(--surface);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--accent-strong); }
+
+  section.faq { margin-top: 40px; }
+  .faq > h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+
+  .category { margin-bottom: 28px; }
+  .category:last-child { margin-bottom: 0; }
+  .category-label {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-strong);
+    margin: 0 0 12px;
+  }
+  .qa { border-top: 1px solid var(--border); }
+  .qa-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .qa-item .q {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 6px;
+  }
+  .qa-item .a {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    margin: 0;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+  footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="crest">ن</div>
+    <h1>Nooria Support</h1>
+    <p class="lede">Antworten auf häufige Fragen zur App — und ein direkter Weg, uns zu erreichen, wenn deine Frage nicht dabei ist.</p>
+  </header>
+
+  <div class="card contact-card">
+    <div>
+      <h2>Frage nicht gefunden?</h2>
+      <p>Schreib uns, wir antworten so schnell wie möglich.</p>
+    </div>
+    <a class="btn" href="mailto:nooria.team@gmail.com">E-Mail an uns</a>
+  </div>
+
+  <section class="faq">
+    <h2>Häufige Fragen</h2>
+
+    <div class="category">
+      <p class="category-label">Konto &amp; Anmeldung</p>
+      <div class="qa">
+        <div class="qa-item">
+          <p class="q">Was ist der Unterschied zwischen Gast und Konto?</p>
+          <p class="a">Als Gast kannst du Videos ansehen, aber keine Fragen stellen, antworten oder Videos hochladen. Mit einem Konto kannst du aktiv in der Community mitmachen.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Warum kann ich meinen Namen nicht ändern?</p>
+          <p class="a">Der Benutzername kann aus Missbrauchsschutz nur alle 7 Tage geändert werden. Wenn du ihn kürzlich geändert hast, siehst du im Profil, wie lange du noch warten musst.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Warum muss ich meine E-Mail bestätigen?</p>
+          <p class="a">Das schützt vor gefälschten Konten mit nicht existierenden E-Mail-Adressen und stellt sicher, dass wir dich z. B. bei einer Passwort-Zurücksetzung erreichen können.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Was passiert, wenn ich mein Konto lösche?</p>
+          <p class="a">Dein Konto wird für 30 Tage vorgemerkt. Meldest du dich in dieser Zeit wieder an, wird die Löschung automatisch storniert. Danach wird alles endgültig gelöscht.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <p class="category-label">Fragen &amp; Antworten</p>
+      <div class="qa">
+        <div class="qa-item">
+          <p class="q">Sehen andere Nutzer, wer eine Frage gestellt hat?</p>
+          <p class="a">Nein. Alle Fragen werden anonym veröffentlicht — dein Name wird anderen Nutzern nie angezeigt.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Was bedeutet „Verifizierte Antwort"?</p>
+          <p class="a">Diese Antworten stammen von geprüften Gelehrten. Andere Antworten sind persönliche Meinungen aus der Community, keine offizielle religiöse Rechtsauskunft.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Wie melde ich eine unangemessene Frage oder Antwort?</p>
+          <p class="a">Tippe auf das „…"-Menü neben dem Beitrag und wähle „Melden". Wir prüfen jede Meldung.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <p class="category-label">Videos</p>
+      <div class="qa">
+        <div class="qa-item">
+          <p class="q">Wer kann meine Videos sehen?</p>
+          <p class="a">Das entscheidest du beim Hochladen: Alle, nur deine Follower, oder komplett privat (nur du).</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Wie finde ich meine gespeicherten Entwürfe?</p>
+          <p class="a">Entwürfe findest du in deinem Profil unter dem Video-Tab.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <p class="category-label">Datenschutz &amp; Sicherheit</p>
+      <div class="qa">
+        <div class="qa-item">
+          <p class="q">Welche Daten speichert die App über mich?</p>
+          <p class="a">Details dazu findest du in unserer Datenschutzerklärung, direkt in der App unter Einstellungen → Datenschutz &amp; Rechtliches.</p>
+        </div>
+        <div class="qa-item">
+          <p class="q">Kann ich andere Nutzer blockieren?</p>
+          <p class="a">Diese Funktion ist in Arbeit und kommt in einem der nächsten Updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Nooria — Alaa Hejazi, Zabel-Krüger-Damm 56, 13469 Berlin</p>
+    <p>Kontakt: <a href="mailto:nooria.team@gmail.com">nooria.team@gmail.com</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
